@@ -4,12 +4,6 @@ Well done for reaching the chapter 1 challenges! Here, you'll find two types of 
 
 ## Initial Setup
 
-### Getting the Code
-
-To get the exercises onto your machine, you'll need to fork and then clone this repo.
-
-If you're not sure how to do that, watch [this short video](https://www.youtube.com/watch?v=QWV5-UNNSLI).
-
 ### Installing Dependencies
 
 Before starting either the drills or the programming challenge, you need to install some dependencies - programs upon which these exercises depend.
@@ -22,7 +16,7 @@ In Ruby, dependencies are managed using two tools `gem` and `bundle`.  You'll ne
 
 **Reach out to your cohort and then your coach if you have any problems installing `bundler`**
 
-Once you have `bundler` installed, you can use it to install all the gems listed in `Gemfile`. Make sure you're in the `challenges` directory (for chapter 1) and then...
+Once you have `bundler` installed, you can use it to install all the gems listed in `Gemfile`. Make sure you're in the `ruby_chapter_1_challenges` directory (you may need to do this in the next chapters when you get to them in the course) and then...
 
 ```shell
 ; bundle install
@@ -67,13 +61,30 @@ Drills are short, tightly focused exercises which get harder as you progress. Yo
 5. Move on to the next set
 6. Keep going until all the tests for all the sets are passing
 7. [Zip up](../pills/creating_zipfiles.md) your code so that you're ready to share it later
+8. Once you are finished, you can push the changes you made to your repo.
 8. Move on to the programming challenge
 
 ## Programming Challenge
 
 In this exercise you'll bring together several different concepts to build a password validator.
 
+Make a new branch for the challenge. Don't merge it into main until it has been peer reviewed.
+
+```bash
+git switch main
+git branch peer_review_branch
+git switch peer_review_branch
+```
+
 > Please do a [screen recording](../pills//screen_recordings.md) of yourself working on this exercise so that your coach can see how you're getting on. You can upload it, along with your code, using the form at the end of this file.
+
+When you are done, push your branch to your repo. And then make a pull request.
+
+Once you navigate to your GitHub repo, head to Pull Requests. This is where you can make a new Pull Request that compares `peer_review_branch` to `main`.
+
+You must send the link to this new Pull Request.
+
+One of your peers will leave comments on the Pull Request. (And you will review their code, too). There is some guidance on reviewing code, and making pull requests, below.
 
 ### Requirements
 
@@ -124,32 +135,7 @@ Each of these can be further broken down...
 ## Submitting Your Work
 You will need to push your changes to your repo in order for it to be reviewed.
 
-**You must make a new public repo on GitHub!** 
-
-Call it something like "**ruby_challenge_one**". Make sure it is set to public
-
 Use [this form](https://airtable.com/shr6mk28x0fy3OrxN?prefill_Item=rubyf_ch1) to submit your code and screen recording, and GitHub repo.
-
-Then add this destination repo to your remote path using Git:
-
-    
-    git remote add review_repo https://github.com/<your profile name>/ruby_challenge_one.git
-    
-
-You must make a new branch in order for your Peer to be able to leave comments on. It will look something like this:
-
-
-    git branch peer_review_branch
-    git switch peer_review_branch
-    git add .
-    git commit -m 'ready to be reviewed'
-    git push -u review_repo peer_review_branch
-
-Once you navigate to your GitHub repo, head to Pull Requests. This is where you can make a new Pull Request that compares `peer_review_branch` to `main`.
-
-You must send the link to this new Pull Request.
-
-Your Peer will leave comments on the Pull Request.
 
 ### Peer Code Review
 

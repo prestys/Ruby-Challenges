@@ -8,7 +8,7 @@ Do the drills first and then move onto the programming challenge. You must compl
 
 ### Installing Dependencies
 
-You don't need to install bundler again, but you should consider this set of exercises to be a new project with its own dependencies. Make sure you're in the `challenges` directory of chapter 2 and then do this...
+You don't need to install bundler again, but you should consider this set of exercises to be a new project with its own dependencies. Make sure you're in the `ruby_chapter_2_challenges` directory and then do this...
 
 ```shell
 ; bundle install

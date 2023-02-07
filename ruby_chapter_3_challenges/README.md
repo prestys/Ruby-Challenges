@@ -8,7 +8,7 @@ Do the drills first and then move onto the programming challenge. You must compl
 
 ### Installing Dependencies
 
-You don't need to install bundler again, but you should consider this set of exercises to be a new project with its own dependencies. Make sure you're in the `challenges` directory of chapter 3 and then do this...
+You don't need to install bundler again, but you should consider this set of exercises to be a new project with its own dependencies. Make sure you're in the `ruby_chapter_3_challenges` directory and then do this...
 
 ```shell
 ; bundle install
@@ -52,6 +52,10 @@ The process here is the same as it was for the previous chapters, but here's a r
 ## Programming Challenge
 
 In this exercise you'll bring together several different concepts to build Password Manager 2.0. 
+
+This challenge will be peer reviewed, so you will need to work in a clean branch and make a pull request -- as you did in [chapter 1](../ruby_chapter_1_challenges/README.md#Programming-Challenge). 
+
+If all the work in the branch you used in chapter 1 has been merged into main, you can use that branch again. Otherwise: make a new one from the main branch.
 
 > Please do a [screen recording](../pills/screen_recordings.md) of yourself working on this exercise so that your coach can see how you're getting on. You can upload it, along with your code, using the form at the end of this file.
 
@@ -111,32 +115,7 @@ To improve readability, you might choose to break some of these methods down int
 ## Submitting Your Work
 You will need to push your changes to your repo in order for it to be reviewed.
 
-**You must make a new public repo on GitHub!** 
-
-Call it something like "**ruby_challenge_three**". Make sure the repo is set to 'public'.
-
 Use [this form](https://airtable.com/shr6mk28x0fy3OrxN?prefill_Item=rubyf_ch3_peer_review) to submit your code and screen recording, and GitHub repo.
-
-Then add this destination repo to your remote path using Git:
-
-    
-    git remote add review_repo https://github.com/<your profile name>/ruby_challenge_one.git
-    
-
-You must make a new branch in order for your Peer to be able to leave comments on. It will look something like this:
-
-
-    git branch peer_review_branch
-    git switch peer_review_branch
-    git add .
-    git commit -m 'ready to be reviewed'
-    git push -u review_repo peer_review_branch
-
-Once you navigate to your GitHub repo, head to Pull Requests. This is where you can make a new Pull Request that compares `peer_review_branch` to `main`.
-
-You must send the link to this new Pull Request.
-
-Your Peer will leave comments on the Pull Request.
 
 ### Peer Code Review
 

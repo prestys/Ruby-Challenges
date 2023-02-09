@@ -2,6 +2,20 @@
 
 Well done for reaching the chapter 1 challenges! Here, you'll find two types of exercise: drills and a programming challenge. Do the drills first and then move onto the programming challenge. You must complete both before going [back](https://github.com/makersacademy/ruby_foundations/blob/main/chapter1/09_putting_chapter_1_into_practice.md) to reflect on your progress.
 
+## Learning objectives
+- practise ruby syntax
+- - call built in methods for strings and integers
+- - define a method for a given task
+- - use conditional statements to control the flow of a program
+- run rspec files and interpret the error message to 
+- - find the source of the error
+- - make informed changes to improve the code
+
+(peer review section) 
+- sharing work on github
+- understanding and evaluating code you haven't written
+- communicating through the github pull request review procedure
+
 ## Initial Setup
 
 ### Installing Dependencies
@@ -72,15 +86,15 @@ Make a new branch for the challenge. Don't merge it into main until it has been 
 
 ```bash
 git switch main
-git branch peer_review_branch
-git switch peer_review_branch
+git branch peer_review_chapter1
+git switch peer_review_chapter1
 ```
 
 > Please do a [screen recording](../pills//screen_recordings.md) of yourself working on this exercise so that your coach can see how you're getting on. You can upload it, along with your code, using the form at the end of this file.
 
 When you are done, push your branch to your repo. And then make a pull request.
 
-Once you navigate to your GitHub repo, head to Pull Requests. This is where you can make a new Pull Request that compares `peer_review_branch` to `main`.
+Once you navigate to your GitHub repo, head to Pull Requests. This is where you can make a new Pull Request that compares `peer_review_chapter1` to `main`. Choose the main branch of the Makers repo (where you cloned your repo from). This PR won't get merged in the Makers repo, but once it is approved you can merge into your repo (either on your terminal or by making a new pull request -- this time choosing your repo as the destination)
 
 You must send the link to this new Pull Request.
 

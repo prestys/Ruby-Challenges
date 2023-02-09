@@ -4,6 +4,21 @@ Well done for reaching the chapter 3 challenges!
 
 Do the drills first and then move onto the programming challenge. You must complete both before going [back](https://github.com/makersacademy/ruby_foundations/blob/main/chapter3/06_putting_chapter_3_into_practice.md) to reflect on your progress.
 
+## Learning objectives
+- practise ruby syntax
+- - filtering an array
+- - performing an action on every element of an array
+- - access values from an array of hashes
+- - searching for values in an array
+- run rspec files and interpret the error message to 
+- - find the source of the error
+- - make informed changes to improve the code
+
+(peer review section) 
+- sharing work on github
+- understanding and evaluating code you haven't written
+- communicating through the github pull request review procedure
+
 ## Initial Setup
 
 ### Installing Dependencies

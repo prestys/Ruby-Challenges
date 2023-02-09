@@ -4,6 +4,17 @@ Well done for reaching the chapter 2 challenges!
 
 Do the drills first and then move onto the programming challenge. You must complete both before going [back](https://github.com/makersacademy/ruby_foundations/blob/main/chapter2/07_putting_chapter_2_into_practice.md) to reflect on your progress.
 
+## Learning objectives
+- practise ruby syntax
+- - create an array and access its values
+- - create a hash and access its values
+- - compare a hash to an array
+- - define a class
+- - create an instance of a class
+- run rspec files and interpret the error message to 
+- - find the source of the error
+- - make informed changes to improve the code
+
 ## Initial Setup
 
 ### Installing Dependencies

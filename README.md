@@ -36,18 +36,22 @@ git remote -v
 
 You should create a branch to make changes to your repo. That way, if you make a mistake that breaks a project, you can always go back to the last good version.
 
-You will also need to make a branch for your peer review task -- see later instructions for that part.
+You will also need to make a branch for each of your peer review tasks. We would like those branches to have only the changes you need for those challenges.
 
-Let's make a branch to prepare for working on the chapter 1 drills. The following both makes the branch and switches to it.
+To make those branches. Do the following:
 
 ```bash
-git checkout -b chapter1-drills
+git switch main
+git branch chapter1-program-challenge
+git branch chapter3-program-challenge
 ```
+
+You can make other branches to work on the drills, too.
 
 Once you have made some changes, staged and committed them, you can send those changes to the remote repo using:
 
 ```bash
-git push -u origin chapter1-drills
+git push -u origin the-branch-name
 ```
 
 ## Doing the drills

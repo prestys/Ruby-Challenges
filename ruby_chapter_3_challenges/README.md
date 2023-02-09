@@ -68,9 +68,13 @@ The process here is the same as it was for the previous chapters, but here's a r
 
 In this exercise you'll bring together several different concepts to build Password Manager 2.0. 
 
-This challenge will be peer reviewed, so you will need to work in a clean branch and make a pull request -- as you did in [chapter 1](../ruby_chapter_1_challenges/README.md#Programming-Challenge). 
+Switch to the branch we asked you to make after forking our repo:
 
-If all the work in the branch you used in chapter 1 has been merged into main, you can use that branch again. Otherwise: make a new one from the main branch.
+```bash
+git switch chapter3-program-challenge
+```
+
+This challenge will be peer reviewed, so you will need to make a pull request -- as you did in [chapter 1](../ruby_chapter_1_challenges/README.md#Programming-Challenge). 
 
 > Please do a [screen recording](../pills/screen_recordings.md) of yourself working on this exercise so that your coach can see how you're getting on. You can upload it, along with your code, using the form at the end of this file.
 

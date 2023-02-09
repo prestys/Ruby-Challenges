@@ -38,7 +38,7 @@ You should create a branch to make changes to your repo. That way, if you make a
 
 You will also need to make a branch for each of your peer review tasks. We would like those branches to have only the changes you need for those challenges.
 
-To make those branches. Do the following:
+Make those branches now, before making any changes:
 
 ```bash
 git switch main

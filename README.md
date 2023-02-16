@@ -1,13 +1,13 @@
 # Ruby Challenges
 
 ## Learning objectives
-- practise ruby syntax
-- run rspec files and interpret the error message to make informed changes to improve the code
+- Practise ruby syntax
+- Run rspec files and interpret the error message to make informed changes to improve the code
 
-(peer review sections) 
-- sharing work on github
-- understanding and evaluating code you haven't written
-- communicating through the github pull request review procedure
+(Peer review sections) 
+- Sharing work on github
+- Understanding and evaluating code you haven't written
+- Communicating through the github pull request review procedure
 
 ## Setting up on your own computer
 

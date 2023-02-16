@@ -3,18 +3,18 @@
 Well done for reaching the chapter 1 challenges! Here, you'll find two types of exercise: drills and a programming challenge. Do the drills first and then move onto the programming challenge. You must complete both before going [back](https://github.com/makersacademy/ruby_foundations/blob/main/chapter1/09_putting_chapter_1_into_practice.md) to reflect on your progress.
 
 ## Learning objectives
-- practise ruby syntax
-- - call built in methods for strings and integers
-- - define a method for a given task
-- - use conditional statements to control the flow of a program
-- run rspec files and interpret the error message to 
-- - find the source of the error
-- - make informed changes to improve the code
+- Practise ruby syntax
+    - Call built in methods for strings and integers
+    - Define a method for a given task
+    - Use conditional statements to control the flow of a program
+- Run rspec files and interpret the error message to 
+    - Find the source of the error
+    - Make informed changes to improve the code
 
-(peer review section) 
-- sharing work on github
-- understanding and evaluating code you haven't written
-- communicating through the github pull request review procedure
+(Peer review section) 
+- Sharing work on github
+- Understanding and evaluating code you haven't written
+- Communicating through the github pull request review procedure
 
 ## Initial Setup
 

@@ -12,7 +12,7 @@
 # when the string is 'hello world'
 # the method should return 'HELLO WORLD'
 def block_caps_a_string(string)
-  # your code goes here
+  return string.upcase
 end
 
 # TASK: define a method that returns a string that is the same as a given string, but converted to lower-case characters.
@@ -20,7 +20,7 @@ end
 # when the string is 'HELLO WORLD'
 # the method should return 'hello world'
 def lower_case_a_string(string)
-  # your code goes here
+  return string.downcase
 end
 
 # TASK: define a method that returns a number which is the count of all characters in a given string.
@@ -28,7 +28,7 @@ end
 # when the string is 'hello'
 # the method should return 5
 def length_of_a_string(string)
-  # your code goes here
+  return string.length
 end
 
 # TASK: define a method that returns a string that reverses the order of the characters in a given string.
@@ -36,7 +36,7 @@ end
 # when the string is 'hello'
 # the method should return 'olleh'
 def reverse_a_string(string)
-  # your code goes here
+  return string.reverse
 end
 
 # TASK: define a method that returns a string that inverts the case of each character in a given string.
@@ -44,7 +44,7 @@ end
 # when the string is 'Hello World'
 # the method should return 'hELLO wORLD'
 def swap_the_case_of_a_string(string)
-  # your code goes here
+  return string.swapcase
 end
 
 # TASK: define a method that returns a symbol that has the same characters (single words for now).
@@ -52,7 +52,7 @@ end
 # when the string is 'hello'
 # the method should return :hello
 def string_to_symbol(string)
-  # your code goes here
+  return ":" + string
 end
 
 # Integer methods
@@ -64,7 +64,7 @@ end
 # when the integer is 2
 # the method should return false
 def is_integer_odd?(integer)
-  # your code goes here
+  return integer.odd?
 end
 
 # TASK: define a method that returns a boolean evaluates if a given integer is even.
@@ -74,7 +74,7 @@ end
 # when the integer is 2
 # the method should return true
 def is_integer_even?(integer)
-  # your code goes here
+  return integer.even?
 end
 
 # TASK: define a method that returns a float converted from a given integer.
@@ -90,7 +90,7 @@ end
 # when the integer is 1
 # the method should return '1'
 def integer_to_string(integer)
-  # your code goes here
+  return "#{integer}"
 end
 
 # TASK: define a method that returns an integer that is one less than a given integer (don't worry about negative numbers for now).
@@ -98,7 +98,7 @@ end
 # when the integer is 2
 # the method should return 1
 def return_previous_integer(integer)
-  # your code goes here
+  return integer - 1
 end
 
 # TASK: define a method that returns an integer that is one more than a given integer (don't worry about negative numbers for now).
@@ -106,7 +106,7 @@ end
 # when the integer is 1
 # the method should return 2
 def return_next_integer(integer)
-  # your code goes here
+  return integer + 1
 end
 
 # Float methods
@@ -116,7 +116,7 @@ end
 # when the float is 1.1
 # the method should return 2.0
 def round_up(float)
-  # your code goes here
+  return float.ceil()
 end
 
 # TASK: define a method that returns a float that is rounded down from a given float.
@@ -124,7 +124,7 @@ end
 # when the float is 1.1
 # the method should return 1.0
 def round_down(float)
-  # your code goes here
+  return float.floor()
 end
 
 # TASK: define a method that returns a string that is equivalent to a given float.
@@ -132,7 +132,7 @@ end
 # when the float is 1.1
 # the method should return '1.1'
 def float_to_string(float)
-  # your code goes here
+  return "#{float}"
 end
 
 # TASK: define a method that returns a integer that is converted from a given float.
@@ -140,7 +140,7 @@ end
 # when the float is 1.1
 # the method should return 1
 def float_to_integer(float)
-  # your code goes here
+  return float.round()
 end
 
 # TASK: define a method that returns a boolean that evaluates whether or not a given float is positive.
@@ -150,7 +150,11 @@ end
 # when the float is -1.1
 # the method should return false
 def float_is_positive?(float)
-  # your code goes here
+  if float >= 0
+    return true
+  else
+    return false
+  end
 end
 
 # TASK: define a method that returns a boolean that evaluates whether or not a given float is negative.
@@ -160,7 +164,11 @@ end
 # when the float is -1.1
 # the method should return true
 def float_is_negative?(float)
-  # your code goes here
+  if float <= 0
+    return true
+  else
+    return false
+  end
 end
 
 # Symbol methods
@@ -170,7 +178,7 @@ end
 # when the symbol is :Hello
 # the method should return :hELLO
 def swap_the_case_of_a_symbol(symbol)
-  # your code goes here
+  return symbol.swapcase
 end
 
 # TASK: define a method that returns a string that is the equivalent of a given symbol.
@@ -178,7 +186,7 @@ end
 # when the symbol is :hello
 # the method should return 'hello'
 def symbol_to_string(symbol)
-  # your code goes here
+  return symbol.delete(":")
 end
 
 # TASK: define a method that returns a symbol that converts every character of a given symbol to upper case.
@@ -186,7 +194,7 @@ end
 # when the symbol is :hello
 # the method should return :HELLO
 def block_caps_a_symbol(symbol)
-  # your code goes here
+  return symbol.upcase
 end
 
 # TASK: define a method that returns a symbol that converts every character of a given symbol to lower case.
@@ -194,7 +202,7 @@ end
 # when the symbol is :HELLO
 # the method should return :hello
 def lower_case_a_symbol(symbol)
-  # your code goes here
+  return symbol.downcase
 end
 
 # Boolean methods
@@ -206,6 +214,10 @@ end
 # when the boolean is false
 # the method should return false
 def boolean_to_string(boolean)
-  # your code goes here
+  if boolean == true
+    return "true"
+  else
+    return "false"
+  end
 end
 

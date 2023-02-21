@@ -18,4 +18,17 @@
 # == YOUR CODE ==
 
 def valid?(password)
+    if password.length > 7 && password.include?("&")
+        return true
+    elsif password.length > 7 && password.include?("@")
+        return true
+    elsif password.length > 7 && password.include?("!")
+        return true
+    elsif password.length > 7 && password.include?("$")
+        return true
+    elsif password.length > 7 && password.include?("%")
+        return true
+    else
+        return false
+    end
 end

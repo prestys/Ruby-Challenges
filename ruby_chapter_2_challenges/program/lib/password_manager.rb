@@ -41,4 +41,24 @@
 # == YOUR CODE ==
 
 class PasswordManager
+    def initialize
+        @passwords = {}
+    end
+    def add(services, password)
+        if password.length > 7 && password =~ /[@!$&%]/
+            return @passwords[services] = password
+        else
+            "Password is invalid!"
+        end
+    end
+    def password_for(service)
+        if @passwords.key?(service)
+            @passwords[service]
+        else
+            "There is no password correlated with this service."
+        end
+    end
+    def services
+        @passwords.keys
+    end
 end

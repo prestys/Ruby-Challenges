@@ -69,4 +69,72 @@
 # == YOUR CODE ==
 
 class PasswordManager2
+    def initialize
+        @arr = []
+        @timestamp = {}
+    end
+    def add(service, password)
+        if @arr.find {|e| /#{service}/ =~ e["service"] } == nil && (password.length > 7 && password =~ /[&%!@$]/) && @arr.find {|e| /#{password}/ =~ e["password"] } == nil
+            hash = {"service" => service, "password" => password}
+            @arr.push(hash)
+        elsif @arr.find {|e| /#{service}/ =~ e["service"] }
+            "ERROR: Service names must be unique"
+        elsif @arr.find {|e| /#{password}/ =~ e["password"] }
+            "ERROR: Passwords must be unique"
+        else 
+        end
+    end
+    def remove(service)
+        index = @arr.find_index {|e| e["service"] == service}
+        if index.nil?
+            "ERROR: Service #{service} is not found."
+        else
+            @arr.delete_at(index)
+            "Service #{service} removed successfully."
+        end
+    end
+    def services
+        serviceArr = []
+        @arr.each do |key, value|
+            serviceArr << key["service"]
+        end
+        return serviceArr
+    end
+    def sort_by(string)
+        if string == "service"
+            serviceArr = []
+            @arr.each do |key, value|
+                serviceArr << key["service"]
+            end   
+            return serviceArr.sort
+        elsif string == "added_on"
+            serviceArrD = []
+            @arr.each do |element|
+                @timestamp[element] = Time.new
+            end
+            sortedByTimestamp = @timestamp.sort_by{|k, v| v}.reverse.to_h.keys
+            sortedByTimestamp.each do |key, value|
+                serviceArrD << key["service"]
+            end
+            return serviceArrD
+        end
+    end
+    def password_for(service)
+        index = @arr.find_index {|e| e["service"] == service}
+        if index.nil?
+            "ERROR: No service under that name is saved."
+        else
+            @arr[index]["password"]
+        end
+    end
+    def update(service, password)
+        index = @arr.find_index {|e| e["service"] == service}
+        if index.nil?
+            "ERROR: No service under that name is saved"
+        else
+            if (password.length > 7 && password =~ /[&%!@$]/) && @arr.find {|e| /#{password}/ =~ e["password"] } == nil
+                @arr[index]["password"] = password
+            end
+        end
+    end
 end
